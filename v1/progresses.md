@@ -8,7 +8,7 @@ Trainees progresses can be listed here.
 GET /trainees/{trainee_id}/progresses
 ```
 
-Response
+### Response
 
 ```json
   [
@@ -43,7 +43,7 @@ Response
   ]
 ```
 
-Progress Fields description
+### Progress fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
@@ -56,19 +56,6 @@ Progress Fields description
 | certificate | string | URL of the certificate PDF. `null` if trainee has not ended
 | completed_chapters | array | Array with the ids of the chapters that the trainee has completed
 
-Product Fields description
+### Course fields description
 
-|  Name  |  Type  |  Description  |
-|--------|--------|---------------|
-| id | id | ID of the course
-| slug | string | Unique string identifier of the course
-| title | string | Course title
-| image | string | Images's URLs of the course
-| duration | integer | Duration in seconds of the course
-| language | string | Language of the course. Possible values: `en`, `pt_pt`, `it`, `fr`, `es`, `de`
-| short_description | string | Small description of the course
-| description | string | Description complement of the course
-| going_learn | string | List of usefull topics that the course approaches
-| intended_for | string | List of who the course is intended for
-| attachments_text | string | List of available attachments
-| tags | string | List of tags
+See [Course fields description](courses.md#course-fields-description) in course page.

@@ -60,7 +60,7 @@ If a given resource is paginated the API will emit the following headers:
 ### Example
 
 ```shell
-https://api.sabe-extend.com/v1/trainees?sort=-name
+https://api.sabe-extend.com/v1/trainees?page=2&per_page=10
 ```
 
 ## Sort
@@ -72,14 +72,14 @@ Each sortable entity has supported fields in its own section.
 ### Example
 
 ```shell
-https://api.sabe-extend.com/v1/trainees?sort=-name # sort by name descending
+https://api.sabe-extend.com/v1/trainees?sort=-name # Sort trainees by name descending
 
-https://api.sabe-extend.com/v1/trainees?sort=email # sort by email ascending
+https://api.sabe-extend.com/v1/trainees?sort=email # Sort trainees by email ascending
 ```
 
 ## Search
 
-SABE Extend API supports search and filtering for some attributes via query string. To filter a collection just add a `field_name=something`. Text searching (`q` attribute) is case insensitive.
+SABE Extend API supports search and filtering for some attributes via query string. To filter a collection just add a `field_name=something`. Free text searching (`q` attribute) is case insensitive.
 
 Each searchable entity has supported fields in its own section.
 

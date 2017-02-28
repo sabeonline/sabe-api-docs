@@ -8,7 +8,7 @@ Here, all the available courses for a trainee will be presented. The courses are
 GET /trainees/{trainee_id}/catalogue
 ```
 
-Response
+### Response
 
 ```json
   {
@@ -52,7 +52,7 @@ Response
   }
 ```
 
-Category fields description
+### Category fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
@@ -65,24 +65,11 @@ Catalogue items description
 |--------|--------|---------------|
 | item_type | string | Type of the item that is in the category. Possible values: `Product`, `Document`
 
-Product Fields description
+### Course fields description
 
-|  Name  |  Type  |  Description  |
-|--------|--------|---------------|
-| id | id | ID of the course
-| slug | string | Unique string identifier of the course
-| title | string | Course title
-| image | string | Images's URLs of the course
-| duration | integer | Duration in seconds of the course
-| language | string | Language of the course. Possible values: `en`, `pt_pt`, `it`, `fr`, `es`, `de`
-| short_description | string | Small description of the course
-| description | string | Description complement of the course
-| going_learn | string | List of usefull topics that the course approaches
-| intended_for | string | List of who the course is intended for
-| attachments_text | string | List of available attachments
-| tags | string | List of tags
+See [Course fields description](courses.md#course-fields-description) in course page.
 
-Document Fields description
+### Document fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|

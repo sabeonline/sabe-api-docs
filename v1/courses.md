@@ -1,4 +1,4 @@
-# Catalogue
+# Courses
 
 Details of the course.
 
@@ -8,7 +8,7 @@ Details of the course.
 GET /courses/{course_id}
 ```
 
-Response
+### Response
 
 ```json
 {
@@ -63,7 +63,7 @@ Response
 }
 ```
 
-Course Fields description
+### Course fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
@@ -75,12 +75,12 @@ Course Fields description
 | language | string | Language of the course. Possible values: `en`, `pt_pt`, `it`, `fr`, `es`, `de`
 | short_description | html | Small description of the course
 | description | html | Description complement of the course
-| going_learn | html | List of usefull topics that the course approaches
+| going_learn | html | List of useful topics that the course approaches
 | intended_for | html | List of who the course is intended for
 | attachments_text | html | List of available attachments
 | tags | string | List of tags
 
-Author fields description
+### Author fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
@@ -91,7 +91,7 @@ Author fields description
 | gender | integer | Author's gender. Possible values: `0`: female, `1`: male,
 | kind | string | Type of author's contribution. Possible values: `main`, `guest`
 
-Module Fields description
+### Module fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|

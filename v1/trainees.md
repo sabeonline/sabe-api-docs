@@ -8,7 +8,7 @@ Trainees are all people who are able to see and consume existing courses. You ca
 POST /trainees
 ```
 
-Payload
+### Payload
 
 ```json
   {
@@ -21,7 +21,7 @@ Payload
   }
 ```
 
-Fields description
+### Fields description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
@@ -30,7 +30,7 @@ Fields description
 | external_code | string | Optional. Company's internal code to identify the trainee
 | groups | array | Optional. An array with the ids of the groups where the trainee belongs. These Ids can be found in the Groups page in the [backoffice](https://backoffice.sabe-extend.com) or in [groups](groups.md) endpoint
 
-Response
+### Response
 
 ```json
   {
@@ -56,7 +56,7 @@ Response
 POST /trainees/{trainee_id}
 ```
 
-[Payload](#payload), [fields](#fields-description) and [response](#reponse) are the same as trainee creation.
+[Payload](#payload), [fields](#fields-description) and [response](#response) are the same as trainee creation.
 
 ## List trainees
 
@@ -64,7 +64,7 @@ POST /trainees/{trainee_id}
 GET /trainees
 ```
 
-Response
+### Response
 
 ```json
   [
@@ -123,7 +123,7 @@ Trainees are [searchable](/README.md#search) and [sortable](/README.md#sort) as 
 GET /trainees/{trainee_id}
 ```
 
-The [response](#reponse) is the same as in trainee creation.
+The [response](#response) is the same as in trainee creation.
 
 ## Remove trainee
 

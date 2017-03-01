@@ -9,10 +9,10 @@ Last updated at `February 28th, 2017` see the [CHANGELOG.md](CHANGELOG.md) for m
 * [Trainees](v1/trainees.md) - Manage people that can see your content
 * [Groups](v1/groups.md) - List existing groups
 * [Courses](v1/courses.md) - Get which courses every trainee can see
-* [Catalogue](v1/catalogue.md) - Get progress status of a specific trainee
+* [Catalogue](v1/catalogue.md) - Get the catalogue for a specific trainee
 * [Progresses](v1/progresses.md) - Get progress status of a specific trainee
 
-## Identify for your account id and api key
+## Identify your account id and api key
 
 To use the API you must provide your username and api_key in each request via Basic Auth.
 
@@ -29,14 +29,14 @@ As stated previously, SABE Extend API uses [Basic Auth](https://en.wikipedia.org
 
 ## Making a request
 
-All URLs start with https://api.sabe-extend.io/v1/. SSL only. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version number and maintain stable support for the old URLs.
+All URLs start with https://api.sabe-extend.com/v1/. SSL only. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version number and maintain stable support for the old URLs.
 
 To create objects using the API each request must include the `Content-Type` header with the value `application/json` and the body must contain data in the JSON format.
 
 ```shell
 curl -u account_id:api_key \
   -H 'Content-Type: application/json' \
-  https://api.sabe-extend.io/v1/ping
+  https://api.sabe-extend.com/v1/ping
 ```
 
 ## Pagination

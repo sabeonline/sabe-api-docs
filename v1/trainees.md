@@ -53,7 +53,7 @@ POST /trainees
 ## Updating a trainee
 
 ```shell
-POST /trainees/{trainee_id}
+PUT /trainees/{trainee_id}
 ```
 
 [Payload](#payload), [fields](#fields-description) and [response](#response) are the same as trainee creation.

@@ -1,6 +1,6 @@
 # Catalogue
 
-Here, all the available courses for a trainee will be presented. The courses are organized in a catalogue by categories. Each category has multiple items hat can be courses or documents. The catalogue is editable in the [backoffice](https://backoffice.sabe-extend.com) in the `Catalogue` menu. Each trainee may have a different list depending on the permissions configured in the backoffice.
+Here, all the available courses for a trainee will be presented. The courses are organized in a catalogue by categories. Each category has multiple items that can be courses or documents. The catalogue is editable in the [backoffice](https://backoffice.sabe-extend.com) in the `Catalogue` menu. Each trainee may have a different list depending on the permissions configured in the backoffice.
 
 ## Trainee's catalogue
 
@@ -59,7 +59,7 @@ GET /trainees/{trainee_id}/catalogue
 | id | id | ID of the category
 | name | string | Name of the category
 
-Catalogue items description
+### Catalogue items description
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
@@ -73,7 +73,7 @@ See [Course fields description](courses.md#course-fields-description) in course 
 
 |  Name  |  Type  |  Description  |
 |--------|--------|---------------|
-| id | id | ID of the course
-| title | string | Course title
+| id | id | ID of the document
+| title | string | Document title
 | url | string | URL of the document
 | tags | string | List of tags

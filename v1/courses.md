@@ -98,3 +98,13 @@ GET /courses/{course_id}
 | id | id | ID of the module
 | title | html | Title
 | duration | integer | Duration of the module in seconds
+
+### Chapter fields description
+
+|  Name  |  Type  |  Description  |
+|--------|--------|---------------|
+| id | id | ID of the chapter
+| title | html | Title
+| duration | integer | Duration of the chapter in seconds
+| optional | boolean | Indication if the chapter is optional or mandatory for course completion
+| content_type | string | Content type of the chapter. Possible values: `Video`, `Quiz`, `Challenge`, `Evaluation`, `Feedback`, `Slide`

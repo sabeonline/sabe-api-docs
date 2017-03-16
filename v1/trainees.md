@@ -15,8 +15,9 @@ POST /trainees
     "trainee": {
       "name": "John Smith",
       "email": "john.smith@yourcompany.com",
-      "external_code": "company_external_code",
-      "groups": [1, 2, 3]
+      "code": "company_code",
+      "groups": [1, 2, 3],
+      "initialize": true
     }
   }
 ```
@@ -27,26 +28,25 @@ POST /trainees
 |--------|--------|---------------|
 | name | string | Required. Person's name
 | email | string | Required. Person's email
-| external_code | string | Optional. Company's internal code to identify the trainee
+| code | string | Optional. Company's internal code to identify the trainee
 | groups | array | Optional. An array with the ids of the groups where the trainee belongs. These Ids can be found in the Groups page in the [backoffice](https://backoffice.sabe-extend.com) or in [groups](groups.md) endpoint
+| initialize | boolean | Optional. Determines if a tranee is created inactive or already activated, with courses.
 
 ### Response
 
 ```json
   {
-    "trainee": {
-      "id": 1234567,
-      "name": "John Smith",
-      "email": "john.smith@yourcompany.com",
-      "external_code": "company_external_code",
-      "status": "active",
-      "groups": [
-        {
-          "id": 12345678,
-          "name": "Awesome trainees"
-        }
-      ]
-    }
+    "id": 1234567,
+    "name": "John Smith",
+    "email": "john.smith@yourcompany.com",
+    "code": "company_code",
+    "status": "active",
+    "groups": [
+      {
+        "id": 12345678,
+        "name": "Awesome trainees"
+      }
+    ]
   }
 ```
 
@@ -69,34 +69,30 @@ GET /trainees
 ```json
   [
     {
-      "trainee": {
-        "id": 1234567,
-        "name": "John Smith",
-        "email": "john.smith@yourcompany.com",
-        "external_code": "company_external_code",
-        "status": "active",
-        "groups": [
-          {
-            "id": 12345678,
-            "name": "Awesome trainees"
-          }
-        ]
-      }
+      "id": 1234567,
+      "name": "John Smith",
+      "email": "john.smith@yourcompany.com",
+      "code": "company_code",
+      "status": "active",
+      "groups": [
+        {
+          "id": 12345678,
+          "name": "Awesome trainees"
+        }
+      ]
     },
     {
-      "trainee": {
-        "id": 1234568,
-        "name": "Susie Cooper",
-        "email": "susie.cooper@yourcompany.com",
-        "external_code": "company_external_code",
-        "status": "disabled",
-        "groups": [
-          {
-            "id": 12345678,
-            "name": "Awesome trainees"
-          }
-        ]
-      }
+      "id": 1234568,
+      "name": "Susie Cooper",
+      "email": "susie.cooper@yourcompany.com",
+      "code": "company_code",
+      "status": "disabled",
+      "groups": [
+        {
+          "id": 12345678,
+          "name": "Awesome trainees"
+        }
+      ]
     }
   ]
 ```
@@ -115,7 +111,7 @@ Trainees are [searchable](/README.md#search) and [sortable](/README.md#sort) as 
   * name (default)
   * id
   * email
-  * external_code
+  * code
 
 ## Show trainee
 

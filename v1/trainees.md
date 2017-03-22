@@ -17,7 +17,7 @@ POST /trainees
       "email": "john.smith@yourcompany.com",
       "code": "company_code",
       "groups": [1, 2, 3],
-      "initialize": true
+      "activate": true
     }
   }
 ```
@@ -30,7 +30,7 @@ POST /trainees
 | email | string | Required. Person's email
 | code | string | Optional. Company's internal code to identify the trainee
 | groups | array | Optional. An array with the ids of the groups where the trainee belongs. These Ids can be found in the Groups page in the [backoffice](https://backoffice.sabe-extend.com) or in [groups](groups.md) endpoint
-| initialize | boolean | Optional. Determines if a tranee is created inactive or already activated, with courses.
+| activate | boolean | Optional. Determines if a tranee is created inactive or already activated, with courses.
 
 ### Response
 

@@ -48,14 +48,14 @@ GET /user_statistics
 | user_name | string | Name of the trainee |
 | user_email | string | Email of the trainee |
 | external_code | string | Company's internal code to identify the trainee |
-| activation_date | timestamp |
+| activation_date | timestamp | Date on which the trainee was activated |
 | conclusion_rate | integer | Course completion rate (0 to 100) |
 | test_grade | integer | Trainee test grade (0 to 100). `null` if the test was not taken |
 | test_date | timestamp | Date on which the trainee took the test. `null` if not taken |
 | certificate | boolean | `true` when the conclusion rate is equal to 100% and test grade is above 50%, `false` otherwise
 | conclusion_date | date | Date of the course conclusion. `null` if not concluded |
 | course_rating | integer | Trainee rating of the course. Values can range from `0` to `5`, `null` if none given |
-| progress_id | string |
+| progress_id | string | ID of the trainee progress on a specific course |
 | product_id | id | ID of the product |
 | product_slug | string | Slug of the product |
 | trainee_id | id | ID of the trainee |

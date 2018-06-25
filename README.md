@@ -11,6 +11,8 @@ Last updated at `February 28th, 2017` see the [CHANGELOG.md](CHANGELOG.md) for m
 * [Courses](v1/courses.md) - Get which courses every trainee can see
 * [Catalogue](v1/catalogue.md) - Get the catalogue for a specific trainee
 * [Progresses](v1/progresses.md) - Get progress status of a specific trainee
+* [Trainee Statistics](v1/user_statistics.md) - Get detailed list of training statistics
+* [Course Statistics](v1/course_statistics.md) - Get overall training statistics
 
 ## Identify your account id and api key
 

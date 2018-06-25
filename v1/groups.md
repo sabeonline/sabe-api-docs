@@ -8,7 +8,7 @@ Trainees can be categorized in groups to make easier to distribute content to di
 GET /groups
 ```
 
-Response
+### Response
 
 ```json
   [

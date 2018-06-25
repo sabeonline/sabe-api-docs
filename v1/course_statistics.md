@@ -1,4 +1,4 @@
-# Trainee statistics
+# Course statistics
 
 Overall course statistics can be listed here.
 
@@ -38,3 +38,10 @@ GET /course_statistics
 | average_rating | integer | Average trainee rating of the courses |
 | learn_time | integer | Total learning time |
 | conclusion_average_time | integer | Average time taken to complete a course |
+
+* **Searchable fields**
+
+|  field  |  type  |  description  |
+|---------|--------|---------------|
+| product_id | id | Searches in course ids. Returns statistics for that specific course |
+| group_id | id | Returns course statistics for that specific group |

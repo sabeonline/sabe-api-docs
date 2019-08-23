@@ -114,14 +114,14 @@ Bugle provides a subscription feature where an external service can notify that 
 has completed a Chapter from an external application.
 
 ```shell
-POST /courses/chaptes/complete
+POST /courses/chapters/complete
 ```
 
 ### Payload
 
 ```json
   {
-    "payload_token": <strict_base64_token>
+    "payload_token": "dGVzdCB0b2tlbg=="
   }
 ```
 
@@ -136,13 +136,22 @@ The `payload_token` parameter must be a valid strict Base64 string, carrying the
 
 ```json
   {
-    "course_id": <course_id>,
-    "trainee_id": <trainee_id>,
-    "chapter_id": <chapter_id>
+    "course_id": 42,
+    "trainee_id": 312,
+    "chapter_id": 99
   }
 ```
 
 ### Response status codes
+On success, the API response is `204 No Content`. In case of invalid token, a
+`400 Bad Request` is sent back. When any of the encoded token information leads
+to a forbidden operation, it's replied a `403 Forbidden` status.
+
 ```
-204 No Content | 403 Forbidden
+204 No Content | 400 Bad Request | 403 Forbidden
 ```
+
+### Subscription feature
+This feature must be enabled by the Backoffice manager using the Backoffice
+application. In case the feature is not enabled, the API response will be `403
+Forbidden`.

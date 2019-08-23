@@ -1,6 +1,6 @@
 # Courses
 
-Details of the course.
+Details of the course and completing a chapter from external integration.
 
 ## Trainee's catalogue
 
@@ -108,3 +108,41 @@ GET /courses/{course_id}
 | duration | integer | Duration of the chapter in seconds
 | optional | boolean | Indication if the chapter is optional or mandatory for course completion
 | content_type | string | Content type of the chapter. Possible values: `Video`, `Quiz`, `Challenge`, `Evaluation`, `Feedback`, `Slide`
+
+## Completing a course Chapter for a Trainee
+Bugle provides a subscription feature where an external service can notify that a Trainee
+has completed a Chapter from an external application.
+
+```shell
+POST /courses/chaptes/complete
+```
+
+### Payload
+
+```json
+  {
+    "payload_token": <strict_base64_token>
+  }
+```
+
+### Fields description
+
+|  Name  |  Type  |  Description  |
+|--------|--------|---------------|
+| payload_token | base64_string | Required. Base64 strict encoded string.
+
+### Payload token information
+The `payload_token` parameter must be a valid strict Base64 string, carrying the following information:
+
+```json
+  {
+    "course_id": <course_id>,
+    "trainee_id": <trainee_id>,
+    "chapter_id": <chapter_id>
+  }
+```
+
+### Response status codes
+```
+204 No Content | 403 Forbidden
+```

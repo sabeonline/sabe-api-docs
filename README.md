@@ -2,7 +2,7 @@
 
 The API is based on a [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architecture which makes API predictable and resource oriented. It uses HTTP built-in features, like HTTP authentication, HTTP verbs (GET, POST, PUT, PATCH, DELETE) and HTTP response codes to allow easy access from any programming language via off-the-shelf libraries and tools.
 
-Last updated at `February 28th, 2017` see the [CHANGELOG.md](CHANGELOG.md) for more details.
+See the [CHANGELOG.md](CHANGELOG.md) for more details.
 
 ## Endpoints
 
